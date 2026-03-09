@@ -1,0 +1,61 @@
+window {
+    background-color: rgba(0, 0, 0, 0.8);
+    font-family: JetBrains Nerd Font;
+    font-size: 18px;
+    color: white;
+    border-radius: 4px;
+
+    background: url(".config/wofi/background.jpg");
+    background-size:cover;
+}
+
+#entry {
+margin-bottom:10px;
+}
+#entry:selected {
+    border-radius: 4px;
+    background: linear-gradient(to bottom right, #33ccff, #00ff99) 1;
+}
+
+#entry:selected #text {
+    color: black;
+}
+#outer-box{
+    margin-left:500px;
+    background: rgba(0, 0, 0, 1);
+    padding: 10px;
+    border-left-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, #33ccff, #00ff99) 1;
+}
+#outer-box:backdrop {
+    margin-left:500px;
+    background: rgba(0, 0, 0, 1);
+    padding: 10px;
+    border-left-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, #595959, #595959) 1;
+    transition: 0.2s;
+}
+#outer-box:backdrop #entry:selected {
+    border-radius: 4px;
+    background: linear-gradient(to bottom right, #595959, #595959) 1;
+    transition: 0.2s;
+}
+#input {
+	border: 0px;
+	border-radius:0px;
+	opacity:0;
+	outline-width: 100px;
+}
+
+#inner-box {
+}
+
+#scroll {
+}
+
+#text {
+    margin-left: 16px;
+    color: #FFFFFF;
+}
