@@ -8,6 +8,10 @@
   "reload_style_on_change": true,
   "gtk-layer-shell": true,
 
+  "output": [
+    "eDP-1",
+    "HDMI-A-1"
+  ],
   "modules-left": [
     "custom/wofi",
     "hyprland/workspaces",
@@ -33,17 +37,10 @@
   "hyprland/workspaces": {
     "on-scroll-up": "hyprctl dispatch workspace -1",
     "on-scroll-down": "hyprctl dispatch workspace +1",
+    "all-outputs": false,
     "persistent-workspaces": {
-      "1": [],
-      "2": [],
-      "3": [],
-      "4": [],
-      "5": [],
-      "6": [],
-      "7": [],
-      "8": [],
-      "9": [],
-      "10": []
+        "eDP-1": [1,2,3,4,5,6],
+        "HDMI-A-1": [7,8,9,10]
     }
   },
 
