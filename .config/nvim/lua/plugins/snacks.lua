@@ -7,7 +7,7 @@ return {
           explorer = {
             layout = {
               layout = {
-                width = 24,
+                width = 48,
                 min_width = 40,
               },
             },
